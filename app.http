@@ -1,0 +1,60 @@
+GET http://localhost:3020/states/
+Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNjc4MTg4ODQwfQ.rVppSAxonilEZcRvw7kRlOdXzsSCexcL7W7jnRtZ3ZE
+###
+
+GET http://localhost:3020/states/9/
+Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNjc4MTg4ODQwfQ.rVppSAxonilEZcRvw7kRlOdXzsSCexcL7W7jnRtZ3ZE
+###
+
+POST http://localhost:3020/districts/
+Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNjc4MTg4ODQwfQ.rVppSAxonilEZcRvw7kRlOdXzsSCexcL7W7jnRtZ3ZE
+Content-text:application/json
+
+{
+  "districtName": "Bagalkot",
+  
+  "stateId": 3,
+  "cases": 2323,
+  "cured": 2000,
+  "active": 315,
+  "deaths": 8
+}
+
+###
+GET http://localhost:3020/districts/9/
+Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNjc4MTg4ODQwfQ.rVppSAxonilEZcRvw7kRlOdXzsSCexcL7W7jnRtZ3ZE
+###
+
+DELETE http://localhost:3020/districts/12/
+Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNjc4MTg4ODQwfQ.rVppSAxonilEZcRvw7kRlOdXzsSCexcL7W7jnRtZ3ZE
+
+###
+
+PUT http://localhost:3020/districts/9/
+Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNjc4MTg4ODQwfQ.rVppSAxonilEZcRvw7kRlOdXzsSCexcL7W7jnRtZ3ZE
+Content-type : application/json 
+
+{
+  "districtName": "Nadia",
+  "stateId": 3,
+  "cases": 9628,
+  "cured": 6524,
+  "active": 3000,
+  "deaths": 104
+}
+
+###
+GET http://localhost:3020/states/8/stats/
+Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNjc4MTg4ODQwfQ.rVppSAxonilEZcRvw7kRlOdXzsSCexcL7W7jnRtZ3ZE
+
+###
+GET http://localhost:3020/districts/12/details/
+Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNjc4MTg4ODQwfQ.rVppSAxonilEZcRvw7kRlOdXzsSCexcL7W7jnRtZ3ZE
+###
+POST http://localhost:3020/login/
+Content-type :application/json
+
+{
+  "username": "christopher_phillips",
+  "password": "christy@123"
+}
